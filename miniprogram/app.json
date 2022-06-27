@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "subpackages": [
+    {
+      "root": "videoInterview",
+      "name": "videoInterview",
+      "pages": [
+        "leadPage/leadPage"
+      ],
+      "plugins": {
+        "videoInterview": {
+          "version": "1.0.2",
+          "provider": "wx122a647381d20d84",
+          "export": "index.js"
+        }
+      }
+    }
+  ],
+  "preloadRule": {
+    "pages/index/index": {
+      "network": "all",
+      "packages": [
+        "videoInterview"
+      ]
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "方便面",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
