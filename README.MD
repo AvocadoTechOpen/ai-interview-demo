@@ -66,4 +66,4 @@ AI视频面试插件是鳄梨科技提供的微信小程序端AI视频面试服�
 
 #### 体验版二维码
 
-![方便面AI视频体验版](./AI_video_trial.png)
+![方便面AI视频体验版](https://webcdn.fbmms.cn/assets/ngfw/fQfv5hdRPgGpAszagSiNP)
