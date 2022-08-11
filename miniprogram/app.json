@@ -12,7 +12,7 @@
       "plugins": {
         "videoInterview": {
           "version": "1.0.2",
-          "provider": "wx122a647381d20d84",
+          "provider": "wx4993ea1204d849d3",
           "export": "index.js"
         }
       }
@@ -29,7 +29,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "方便面",
+    "navigationBarTitleText": "方便面AI视频演示",
     "navigationBarTextStyle": "black"
   },
   "style": "v2",

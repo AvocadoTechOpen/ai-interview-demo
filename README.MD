@@ -7,7 +7,7 @@ AI视频面试插件是鳄梨科技提供的微信小程序端AI视频面试服�
 ### 添加插件
 
 在使用插件前，首先要在小程序管理后台的“设置-第三方设置-插件管理”中添加插件。开发者可登录小程序管理后台，
-通过 appid[wx122a647381d20d84] 查找插件并添加
+通过 appid[wx4993ea1204d849d3] 查找插件并添加
 
 ### 引入插件
 
@@ -19,7 +19,7 @@ AI视频面试插件是鳄梨科技提供的微信小程序端AI视频面试服�
   "plugins": {
     "videoInterview": {
       "version": "1.0.2",
-      "provider": "wx122a647381d20d84"
+      "provider": "wx4993ea1204d849d3"
     }
   }
   ...
@@ -42,7 +42,7 @@ AI视频面试插件是鳄梨科技提供的微信小程序端AI视频面试服�
       ],
       "plugins": {
         "videoInterview": {
-          "provider": "wx122a647381d20d84",
+          "provider": "wx4993ea1204d849d3",
           "export": "index.js"
         }
       }
@@ -63,3 +63,7 @@ AI视频面试插件是鳄梨科技提供的微信小程序端AI视频面试服�
 [方便面开发平台-AI视频面试小程序插件](https://avocadotechopen.github.io/developers/docs/AI视频面试/mp-plugin)
 
 ### FAQ
+
+#### 体验版二维码
+
+![方便面AI视频体验版](./AI_video_trial.png)

@@ -8,7 +8,10 @@ Page({
       'LJP4ojCJ0K6UeC7yPTFORDKLK7'
     ]
   },
-  onLoad() {},
+  onLoad() {
+    const params = encodeURIComponent(JSON.stringify({ interviewToken: '9sqhghj9jMF19us5lu7TRDKLK7' }))
+    this.setData({ params })
+  },
   enterPlugin(e: any) {
     const params = {
       interviewToken: e.target.dataset.value
