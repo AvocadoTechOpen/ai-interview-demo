@@ -1,6 +1,5 @@
 const app = getApp<IAppOption>()
 const plugin = requirePlugin('videoInterview')
-let { initData } = require('../index')
 
 Page({
   /**
@@ -17,9 +16,9 @@ Page({
     })
     this.registerEvents()
     // 动态设置
-    this.setInitData({
+    this.setConfig({
       guidePageVideoUrl: 'https://test-alicdn.fbmms.cn/position/video/puktGtHIOyxHiKkSqTLMRDING5_1655291957.mp4',
-      guidePageBtnText: '开始面试',
+      guidePageBtnText: '准备好了，开始面试',
       customFinishImg: 'https://public-static-assets.oss-cn-beijing.aliyuncs.com/img/interview-complete.png'
     })
     wx.redirectTo({
@@ -43,11 +42,12 @@ Page({
   },
   /**
    * @description: 设置给插件传递的数据
-   * @param {String} guidePageVideoUrl 设置引导视频
-   * @param {String} guidePageBtnText 设置引导按钮文案
+   * @param {String} guidePageVideoUrl 引导视频
+   * @param {String} guidePageBtnText 引导按钮文案
+   * @param {String} customFinishImg 完成页自定义图片
    */
-   setInitData({ guidePageVideoUrl = '', guidePageBtnText = '', customFinishImg= '' }) {
-    initData = { ...initData, guidePageVideoUrl, guidePageBtnText, customFinishImg }
+   setConfig(data = { guidePageVideoUrl: '', guidePageBtnText: '', customFinishImg: '' }) {
+    plugin.setConfig(data);
   },
 })
 
