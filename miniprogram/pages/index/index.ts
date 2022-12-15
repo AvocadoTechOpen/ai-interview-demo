@@ -3,9 +3,11 @@ Page({
   data: {
     params: '',
     tokenList: [
-      '9sqhghj9jMF19us5lu7TRDKLK7',
-      'OgGR01UMbSQlaQJ9PE7tRDKLK7',
-      'LJP4ojCJ0K6UeC7yPTFORDKLK7'
+      'MNbVkEuUG3iPkCnhEOMcRGZZPG', // 测试环境 开始
+      'QOUYlEc4XNTWwI91Cw0PRGZZPG',
+      '6Uaey6knlhE9lq4gQ4ujRGZZPG',
+      'r2d7c7LQ6cRbMR0tiUTKRGZZPG',
+      '89SP2rYqTusXolZVLHRbRII0G1', // 这一批是测试环境使用
     ]
   },
   onLoad() {

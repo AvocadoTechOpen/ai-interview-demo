@@ -11,15 +11,19 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    wx.showLoading({
-      title: 'loading...'
-    })
     this.registerEvents()
     // 动态设置
     this.setConfig({
-      guidePageVideoUrl: 'https://test-alicdn.fbmms.cn/position/video/puktGtHIOyxHiKkSqTLMRDING5_1655291957.mp4',
-      guidePageBtnText: '准备好了，开始面试',
-      customFinishImg: 'https://public-static-assets.oss-cn-beijing.aliyuncs.com/img/interview-complete.png'
+      AppConfig: {
+        ApiBaseUrl: 'https://fbm-api-demo2.fbmms.cn', // TODO 测试环境打开；生产环境关闭
+        watermark: 1, // 是否开启水印
+        watermarkText: '123456789', // 水印内容，建议数字
+      },
+      InterviewConfig: {
+        guidePageVideoUrl: 'https://test-alicdn.fbmms.cn/position/video/puktGtHIOyxHiKkSqTLMRDING5_1655291957.mp4',
+        guidePageBtnText: '开始面试',
+        customFinishImg: 'https://public-static-assets.oss-cn-beijing.aliyuncs.com/img/interview-complete.png',
+      },
     })
     wx.redirectTo({
       url: `plugin://videoInterview/index?mpParams=${options.mpParams}`
@@ -42,12 +46,11 @@ Page({
   },
   /**
    * @description: 设置给插件传递的数据
-   * @param {String} guidePageVideoUrl 引导视频
-   * @param {String} guidePageBtnText 引导按钮文案
-   * @param {String} customFinishImg 完成页自定义图片
+   * @param {object} AppConfig 系统配置
+   * @param {object} InterviewConfig 面试配置
    */
-   setConfig(data = { guidePageVideoUrl: '', guidePageBtnText: '', customFinishImg: '' }) {
-    plugin.setConfig(data);
+   setConfig(data = { AppConfig: {}, InterviewConfig: {} }) {
+    plugin.setConfig(data)
   },
 })
 
