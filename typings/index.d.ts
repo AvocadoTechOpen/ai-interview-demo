@@ -2,8 +2,6 @@
 
 interface IAppOption {
   globalData: {
-    userInfo?: WechatMiniprogram.UserInfo,
-    videoInterview: VideoInterview
+    userInfo?: WechatMiniprogram.UserInfo
   }
-  userInfoReadyCallback?: WechatMiniprogram.GetUserInfoSuccessCallback,
 }

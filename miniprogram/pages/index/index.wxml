@@ -1,9 +1,0 @@
-<!--index.wxml-->
-<view class="container">
-  <!-- 导航组件方式 -->
-  <view class="title">使用导航组件：</view>
-  <navigator class="nav" url="plugin://videoInterview/index?mpParams={{params}}"> navigator: Navigate to Plugin page </navigator>
-  <!-- methods -->
-  <view class="title">路由api唤起：</view>
-  <view class="nav btn-enter" wx:for="{{tokenList}}" data-value="{{item}}" wx:key="item" wx:for-item="item" bindtap="enterPlugin">{{item}}</view>
-</view>
