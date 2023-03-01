@@ -8,7 +8,7 @@ export default class Index extends Component {
     super(props)
     this.state = { 
       tokenList: [
-        'UM8gPZfalMalRO0CIanKRMGQFK',
+        'TNLBoS3EhygKPS6hBOQeRQTMMK',
       ]
     }
   }
@@ -23,9 +23,9 @@ export default class Index extends Component {
 
   componentDidHide () { }
 
-  enterPlugin(e: any) {
+  enterPlugin(interviewToken: string) {
     const params = {
-      interviewToken: 'UM8gPZfalMalRO0CIanKRMGQFK'
+      interviewToken
     }
     Taro.redirectTo({
       url: `/videoInterview/leadPage/leadPage?mpParams=${encodeURIComponent(JSON.stringify(params))}`,
@@ -38,7 +38,7 @@ export default class Index extends Component {
       <View className='index'>
         <Text>token list!</Text>
         {
-          tokenList.map(ele => <Button className='btn' key={ele} onClick={this.enterPlugin}>{ele}</Button>)
+          tokenList.map(ele => <Button className='btn' key={ele} onClick={() => this.enterPlugin(ele)}>{ele}</Button>)
         }
       </View>
     )

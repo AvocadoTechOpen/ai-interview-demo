@@ -17,7 +17,7 @@ export default defineAppConfig({
       ],
       "plugins": {
         "videoInterview": {
-          "version": "1.2.1",
+          "version": "1.2.5",
           "provider": "wx4993ea1204d849d3",
           "export": "index.js"
         }
